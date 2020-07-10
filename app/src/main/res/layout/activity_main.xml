@@ -1,0 +1,162 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:fillViewport="true"
+        android:gravity="center|top"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/coresans_cr_medium"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Latihan Firebase"
+                android:textColor="@color/colorBalck"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/coresans_cr_medium"
+                android:textColor="@color/colorGrey1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Pemrograman Android 3"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/coresans_cr_regular"
+                    android:textColor="@color/colorGrey1"
+                    android:padding="0dp"
+                    android:text="NIM"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/editext_key"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_editetext"
+                        android:drawablePadding="10dp"
+                        android:hint="Teks Key"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColor="@color/colorGrey2"
+                        android:textColorHint="@color/colorGrey" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/coresans_cr_regular"
+                    android:textColor="@color/colorGrey1"
+                    android:padding="0dp"
+                    android:text="Nama"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                    <EditText
+                        android:id="@+id/editext_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_editetext"
+                        android:drawablePadding="10dp"
+                        android:hint="Teks Value"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColor="@color/colorGrey2"
+                        android:textColorHint="@color/colorGrey" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/button_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rounded_area"
+                    android:elevation="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/btn_add"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_area"
+                        android:gravity="center"
+                        android:text="Tambah"
+                        android:fontFamily="@font/coresans_cr_extrabold"
+                        android:textColor="@color/colorBalck"
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/hasil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/coresans_cr_medium"
+                    android:textColor="@color/colorGrey1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:visibility="invisible"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/coresans_cr_regular"
+                android:textColor="@color/colorGrey1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="41170588 Ahmad Fauzi"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
